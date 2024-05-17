@@ -3,10 +3,11 @@
 import { computed, reactive } from 'vue';
 import Rating from '@/components/Rating.vue';
 import IconMobilVue from '@/components/icons/IconMobil.vue';
-
+import IconClean from '@/components/icons/IconClean.vue';
 import { useCounterStore } from '@/stores/counter';
 import { useRouter } from 'vue-router';
 import IconStaf from '@/components/icons/IconStaf.vue';
+import IconSecurity from '@/components/icons/iconSecurity.vue';
 
 const router = useRouter()
 const counter =  useCounterStore()
@@ -85,7 +86,7 @@ const submitForm = () => {
 
       <div class="rating-field grid grid-cols-1 lg:grid-cols-2 items-center">
         <div class="rt-text bg-white text-primary">
-          <IconMobilVue class="shrink-0 text-5xl" />
+          <IconClean class="shrink-0 text-5xl" />
           <p class="font-semibold">
            Bagaimana peniaian anda terhadap keseluruhan kebersihan area dan fasilitas kami?
           </p>
@@ -97,7 +98,7 @@ const submitForm = () => {
 
       <div class="rating-field grid grid-cols-1 lg:grid-cols-2 items-center">
         <div class="rt-text bg-primary text-white">
-          <IconMobilVue class="shrink-0 text-5xl" />
+          <IconSecurity class="shrink-0 text-5xl" />
           <p class="font-semibold">
            Bagaimana anda menilai pelayanan keamanan kami?
           </p>
