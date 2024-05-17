@@ -3,8 +3,10 @@
 import { computed, reactive } from 'vue';
 import Rating from '@/components/Rating.vue';
 import IconMobilVue from '@/components/icons/IconMobil.vue';
+
 import { useCounterStore } from '@/stores/counter';
 import { useRouter } from 'vue-router';
+import IconStaf from '@/components/icons/IconStaf.vue';
 
 const router = useRouter()
 const counter =  useCounterStore()
@@ -28,7 +30,7 @@ const nilai = ['Sangat Puas','Puas', 'Netral','Tidak Puas', 'Sangat Tidak Puas']
 const submitForm = () => {
   counter.score = totalScore.value
   router.push('/about')
-  console.log(ratings);
+ 
   // Lakukan sesuatu dengan data ratings, misalnya mengirim ke server
 };
 </script>
@@ -107,7 +109,7 @@ const submitForm = () => {
 
       <div class="rating-field grid grid-cols-1 lg:grid-cols-2 items-center">
         <div class="rt-text bg-white text-primary">
-          <IconMobilVue class="shrink-0 text-5xl" />
+          <IconStaf class="shrink-0 text-5xl" />
           <p class="font-semibold">
            Seberapa puaskah anda dengan profesionalisme staff dan perwakilan kami
           </p>
