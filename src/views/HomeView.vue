@@ -41,7 +41,7 @@ const isLoading = ref(true);
 setTimeout(() => {
   isLoading.value = false;
   
-}, 2000); // Simulasikan waktu loading selama 2 detik
+}, 3000); // Simulasikan waktu loading selama 2 detik
 
 </script>
 <template>

@@ -6,7 +6,7 @@ import { onMounted } from "vue";
 const intro = () => {
     animate('.intro',{
         opacity:[0,1],
-        scale:[0.5, 1],
+        scale:[0.5, 1 ],
     },{
         duration:2,
     })
